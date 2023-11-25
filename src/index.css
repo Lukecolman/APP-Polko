@@ -1,0 +1,311 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* APP */
+
+button {
+
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+margin: 0 10px 0 10px;
+}
+
+button:hover {
+color: #42D6E2;
+}
+
+.app-section{
+@apply
+bg-[#202442]
+flex 
+justify-center 
+items-center 
+min-h-screen
+;
+}
+
+.section-container{
+  @apply
+  min-h-screen  
+  gap-5 
+  bg-[#25294A] 
+  rounded-2xl 
+  p-5 
+  flex 
+  items-stretch 
+  text-white;
+}
+
+.titles{
+  @apply
+  flex 
+  gap-2
+  text-xl 
+  font-bold 
+  font-['Inter'] 
+  tracking-wide
+  ;
+}
+
+.bg-c1{
+  @apply
+  bg-[#1D203C] 
+  ;
+}
+
+.bg-c2{
+  @apply
+  bg-[#2C3159]
+  ;
+}
+
+
+/* APP LIST */
+
+.list-container{
+  @apply
+  rounded-2xl  py-8 px-5 flex-1
+
+; 
+}
+
+.list-subcontainer{
+  @apply
+  flex-col gap-[25px] inline-flex
+  ;
+}
+
+/* APP CART AND CHECKOUT */
+
+.cart-checkout-container{
+  @apply
+  flex flex-col justify-between gap-5;
+}
+
+.cart-container{
+  @apply
+  h-full bg-opacity-60 rounded-2xl py-8 px-5
+}
+
+.cart-subcontainter{
+  @apply
+  self-stretch justify-start items-center gap-2 inline-flex;
+}
+
+.checkout-container{
+  @apply
+  w-[762px] rounded-[17px] py-8 px-5
+  ;
+}
+
+.checkout-subcontainer{
+  @apply
+  flex-col
+  ;
+}
+
+
+
+/* COMPONENTS */
+
+/* PRODUCTLIST */
+
+.productList-section{
+  @apply
+  flex 
+  flex-col 
+  ;
+}
+
+.productList-t{ 
+  @apply
+  text-sm 
+  font-bold 
+  font-[inter] 
+  tracking-wide
+  text-center
+  ;
+}
+
+.productList-t-wide{
+  @apply
+  w-2/6 
+  ;
+}
+
+.tStart{
+  @apply
+  text-start
+;
+}
+
+.productList-t-narrow{
+  @apply
+  w-1/6
+  ;
+}
+
+
+.productList-section{
+  @apply
+  flex flex-col text-white
+  ;
+}
+.productList-section{
+  @apply
+  flex flex-col text-white
+  ;
+}
+
+td{
+  @apply
+  text-center
+  ;
+}
+
+.productList-product-containter{
+  @apply
+  pl-4 
+  flex 
+  items-center 
+  gap-4 
+  my-2
+  ;
+}
+
+.productList-product-img{
+  @apply
+  w-[46px] 
+  h-[46px] 
+  rounded-full 
+  flex 
+  items-center 
+  justify-center
+  ;
+}
+
+.productList-product-description{
+  @apply
+  text-white 
+  text-opacity-50 
+  text-xs 
+  font-normal 
+  font-[inter] 
+  tracking-wide  
+  text-left
+  ;
+}
+
+
+
+/* ADDPRODUCTFORM */
+
+
+.addProductForm-container{
+  @apply
+  cursor-pointer 
+  p-2 
+  flex 
+  flex-col 
+  justify-start 
+  items-start 
+  rounded-xl 
+  hover:bg-[#272944] 
+  my-3
+  ;
+}
+
+.addProductForm-subcontainer{
+  @apply
+  flex 
+  justify-start 
+  items-center 
+  gap-[15px]  
+  w-full
+  ;
+}
+
+.addProductForm-imgContainer{
+  @apply
+  w-[46px] 
+  h-[46px] 
+  flex 
+  items-center
+  ;
+}
+
+.addProductForm-img{
+  @apply
+  rounded-full
+  ;
+}
+
+.addProductForm-textContainer{
+  @apply
+  flex 
+  flex-col 
+  gap-[9px] 
+  w-full  
+  ;
+}
+
+
+.productForm-mainText{ 
+  @apply
+  text-sm 
+  font-bold 
+  font-[inter] 
+  tracking-wide
+  flex gap-[100px] justify-between
+  ;
+}
+.productForm-subText{ 
+  @apply
+text-white 
+  text-opacity-50 
+  text-xs 
+  font-normal 
+  font-['Inter'] 
+  tracking-wide
+;
+}
+
+
+/* CHECKOUT TOTAL */
+
+.checkoutTotal-section{
+  @apply
+  w-full flex justify-between text-white
+  ;
+}
+
+.checkoutTotal-totalContainer{
+  @apply
+  h-6 
+  flex 
+  items-center 
+  gap-2.5
+  ;
+}
+
+.checkoutTotal-text{
+  @apply
+  text-base 
+  font-medium 
+  font-[inter] 
+  tracking-wide
+  ;
+}
+
+.checkoutTotal-amount{
+  @apply
+  text-xl 
+  font-bold 
+  font-[inter] 
+  tracking-wide
+  ;
+}
